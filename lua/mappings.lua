@@ -19,6 +19,12 @@ n('<C-s>', ':w<CR>')
 i('<C-s>', '<Esc>:w<CR>')
 n('<Leader>ss', ':so init.lua<CR>')
 
+-- quit vim without saving
+n('<C-q>', ':%bd|q!<CR>')
+
+-- new line in insert mode
+i('<C-o>', '<Esc>o')
+
 -- quit insert mode
 i('jk', '<Esc>')
 i('kj', '<Esc>')
