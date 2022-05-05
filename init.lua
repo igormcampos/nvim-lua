@@ -12,4 +12,5 @@ r('packages.autopairs')
 r('packages.nvim-tree')
 r('packages.lsp')
 r('packages.treesitter')
+r('packages.sneak')
 
