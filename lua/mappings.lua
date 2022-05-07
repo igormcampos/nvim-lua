@@ -47,11 +47,26 @@ v('<Tab>', '>gv')
 n('<S-Tab>', 'V<')
 n('<Tab>', 'V>')
 
+-- create vertical split
+n('<A-v>', ':vs<CR>')
+i('<A-v>', '<Esc>:vs<CR>')
+v('<A-v>', '<Esc>:vs<CR>')
+
 -- navigate splits
-n('<C-h>', '<C-w>h')
-n('<C-j>', '<C-w>j')
-n('<C-k>', '<C-w>k')
-n('<C-l>', '<C-w>l')
+n('<A-h>', '<C-w>h')
+n('<A-j>', '<C-w>j')
+n('<A-k>', '<C-w>k')
+n('<A-l>', '<C-w>l')
+
+-- quick move
+n('<C-h>', '20h')
+n('<C-j>', '20j')
+n('<C-k>', '20k')
+n('<C-l>', '20l')
+v('<C-h>', '20h')
+v('<C-j>', '20j')
+v('<C-k>', '20k')
+v('<C-l>', '20l')
 
 -- settings mappings
 n('<Leader>sdi', ':vsp<Space>~/.config/nvim/init.lua<CR>')
@@ -103,10 +118,6 @@ i('<C-l>', '<Esc>la')
 n('<Leader>gs', ':G<CR>')
 n('<Leader>gf', ':diffget //2<CR>')
 n('<Leader>gj', ':diffget //3<CR>')
-
--- limelight + goyo
-n('<A-l>', ':Goyo<CR>:Limelight!!<CR>')
-n('<A-f>', ':Goyo<CR>')
 
 -- nerdtree
 n('<C-t>', ':NvimTreeFocus<CR>')
