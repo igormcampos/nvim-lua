@@ -105,7 +105,10 @@ v('<C-d>', '<S-v>y`]p')
 i('<C-d>', '<Esc><S-v>yp')
 
 -- exec node current file
-n('<Leader>node', ':!node %<CR>')
+n('<Leader>nn', ':!node %<CR>')
+
+-- run cargo rust
+n('<Leader>rr', ':!cargo run<CR>')
 
 -- quick move in insert mode
 i('<C-h>', '<Esc>ha')
@@ -126,7 +129,8 @@ n('<C-t><C-f>', ':NvimTreeFindFile<CR>') -- focus current file on tree
 -- telescope
 n('<C-p>', ':Files<CR>')
 n('<C-o>', ':Telescope find_files<CR>')
-n('<C-f>', ':Telescope live_grep<CR>')
+n('<C-f>', ':Telescope current_buffer_fuzzy_find<CR>')
+n('<C-f><C-f>', ':Telescope live_grep<CR>')
 n('<C-b>', ':Telescope buffers<CR>')
 n('<C-p>', ":lua require'telescope'.extensions.repo.list{search_dirs = {'~/projects', '~/.config/nvim'}, file_ignore_patterns={'%.*nvim.*autoload.*'}}<CR>")
 

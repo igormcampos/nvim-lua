@@ -28,4 +28,6 @@ lspconfig.psalm.setup {}
 lspconfig.sqls.setup {}
 lspconfig.solang.setup {}
 lspconfig.yamlls.setup {}
+lspconfig.tailwindcss.setup {}
+lspconfig.graphsq.setup {}
 
